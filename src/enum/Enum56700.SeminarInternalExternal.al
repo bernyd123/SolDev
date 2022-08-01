@@ -1,7 +1,7 @@
-enum 56700 "Seminar Internal/External"
+enum 56701 "Seminar Internal/External"
 {
     Extensible = true;
-    
+
     value(0; "internal")
     {
         Caption = 'Internal';
