@@ -1,0 +1,11 @@
+{
+    "name": "BernyRules",
+    "description": "Berny's Custom Rules",
+    "rules": [
+        {
+            "id": "AA0215",
+            "action": "None",
+            "justification": "Ignore file name errors so I can rename files."
+        }
+    ]
+}

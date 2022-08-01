@@ -1,4 +1,4 @@
-pageextension 56701 ResourceListExt extends "Resource List"
+pageextension 56701 "ResourceListExt" extends "Resource List"
 {
     layout
     {
