@@ -78,5 +78,17 @@ page 56701 "Seminar List"
             }
         }
     }
-
+    trigger OnOpenPage()
+    var
+        SeminarSetup: Record "Seminar Setup";
+        CheckNoSeries: Notification;
+    begin
+        SeminarSetup.Get();
+        IF SeminarSetup."Seminar Nos." = '' then begin
+            CheckNoSeries.Message('No No. Series has been setup for Seminars, Would you like  to create a default setup?');
+            CheckNoSeries.AddAction('Yes', Codeunit::"Seminar Notification", 'CreateNoSeries');
+            CheckNoSeries.AddAction('No', Codeunit::"Seminar Notification", 'DoNothing');
+            CheckNoSeries.Send();
+        end;
+    end;
 }
