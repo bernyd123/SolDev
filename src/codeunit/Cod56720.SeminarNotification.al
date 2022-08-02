@@ -7,7 +7,6 @@ codeunit 56720 "Seminar Notification"
         SeminarSetup: Record "Seminar Setup";
     begin
         If not (NoSeries.Get('Sem')) then begin
-            ;
             NoSeries.Init();
             NoSeries.Code := 'Sem';
             NoSeries.Description := 'Seminar Numbers';

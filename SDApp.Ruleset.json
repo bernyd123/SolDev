@@ -6,6 +6,11 @@
             "id": "AA0215",
             "action": "None",
             "justification": "Ignore file name errors so I can rename files."
+        },
+        {
+            "id": "AA0137",
+            "action": "None",
+            "justification": "Unused Variables will be used later."
         }
     ]
 }
