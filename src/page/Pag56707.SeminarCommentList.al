@@ -9,8 +9,7 @@ page 56707 "Seminar Comment List"
     LinksAllowed = false;
     PageType = List;
     SourceTable = "Seminar Comment Line";
-    UsageCategory = Lists;
-    ApplicationArea = All;
+    UsageCategory = None;
 
     layout
     {

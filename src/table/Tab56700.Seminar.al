@@ -49,7 +49,7 @@ table 56700 "Seminar"
             Caption = 'Maximum Participants';
             DataClassification = ToBeClassified;
         }
-        field(6; "Search Name"; Text[50])
+        field(6; "Search Name"; Code[50])
         {
             Caption = 'Search Name';
             DataClassification = ToBeClassified;
@@ -175,8 +175,8 @@ table 56700 "Seminar"
         Seminar := Rec;
         SeminarSetup.Get();
         SeminarSetup.TestField("Seminar Nos.");
-        if NoSeriesManagement.SelectSeries(SeminarSetup."Seminar Nos.", xRec."No. Series", Rec."No. Series") then begin
-            NoSeriesManagement.SetSeries("No.");
+        if NoSeriesManagement.SelectSeries(SeminarSetup."Seminar Nos.", xRec."No. Series", Seminar."No. Series") then begin
+            NoSeriesManagement.SetSeries(Seminar."No.");
             Rec := Seminar;
             exit(true);
         end;

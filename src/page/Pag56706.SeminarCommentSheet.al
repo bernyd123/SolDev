@@ -12,8 +12,7 @@ page 56706 "Seminar Comment Sheet"
     MultipleNewLines = true;
     PageType = List;
     SourceTable = "Seminar Comment Line";
-    UsageCategory = Administration;
-    ApplicationArea = All;
+    UsageCategory = None;
 
     layout
     {

@@ -5,6 +5,8 @@ page 56702 "Seminar Setup"
     SourceTable = "Seminar Setup";
     UsageCategory = Administration;
     ApplicationArea = All;
+    InsertAllowed = false;
+    DeleteAllowed = false;
 
     layout
     {
