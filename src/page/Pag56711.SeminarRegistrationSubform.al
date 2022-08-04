@@ -6,7 +6,7 @@ page 56711 "Seminar Registration Subform"
 
     Caption = 'Lines';
     DelayedInsert = true;
-    PageType = List;
+    PageType = ListPart;
     SourceTable = "Seminar Registration Line";
     UsageCategory = None;
 
